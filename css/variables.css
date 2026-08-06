@@ -1,0 +1,158 @@
+/* ==========================================================
+   PROJECT NOIR : HIGHLAND SENTINEL
+   VARIABLES.CSS
+   ----------------------------------------------------------
+   Global Design Tokens
+   ========================================================== */
+
+:root{
+
+    /*======================================
+      COLORS
+    ======================================*/
+
+    --color-bg:#05080D;
+    --color-bg-alt:#08121C;
+    --color-surface:#0E1825;
+    --color-panel:#122131;
+
+    --color-glass:rgba(255,255,255,.08);
+    --color-glass-strong:rgba(255,255,255,.12);
+
+    --color-border:rgba(255,255,255,.12);
+    --color-border-light:rgba(255,255,255,.20);
+
+    --color-text:#F5F7FA;
+    --color-text-soft:#C8D0DA;
+    --color-text-muted:#8C98A8;
+
+    --color-primary:#3FA9FF;
+    --color-primary-light:#7DD3FF;
+    --color-primary-dark:#2367B8;
+
+    --color-success:#4BE38A;
+    --color-warning:#FFC857;
+    --color-danger:#FF6262;
+
+    --color-white:#FFFFFF;
+    --color-black:#000000;
+
+    /*======================================
+      TYPOGRAPHY
+    ======================================*/
+
+    --font-primary:"Poppins",sans-serif;
+    --font-mono:"JetBrains Mono",monospace;
+
+    --fw-light:300;
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+    --fw-black:800;
+
+    --fs-xs:.75rem;
+    --fs-sm:.875rem;
+    --fs-md:1rem;
+    --fs-lg:1.125rem;
+    --fs-xl:1.35rem;
+    --fs-2xl:2rem;
+    --fs-3xl:3rem;
+    --fs-4xl:4rem;
+
+    /*======================================
+      SPACING
+    ======================================*/
+
+    --space-1:.25rem;
+    --space-2:.5rem;
+    --space-3:.75rem;
+    --space-4:1rem;
+    --space-5:1.5rem;
+    --space-6:2rem;
+    --space-7:3rem;
+    --space-8:4rem;
+    --space-9:6rem;
+
+    /*======================================
+      BORDER RADIUS
+    ======================================*/
+
+    --radius-sm:8px;
+    --radius-md:14px;
+    --radius-lg:22px;
+    --radius-xl:30px;
+    --radius-pill:999px;
+
+    /*======================================
+      SHADOWS
+    ======================================*/
+
+    --shadow-sm:
+        0 8px 18px rgba(0,0,0,.18);
+
+    --shadow-md:
+        0 18px 40px rgba(0,0,0,.30);
+
+    --shadow-lg:
+        0 25px 70px rgba(0,0,0,.45);
+
+    --shadow-blue:
+        0 0 30px rgba(63,169,255,.20);
+
+    --shadow-blue-strong:
+        0 0 55px rgba(63,169,255,.35);
+
+    /*======================================
+      GLASS
+    ======================================*/
+
+    --glass-blur:18px;
+    --glass-blur-heavy:28px;
+
+    /*======================================
+      LAYOUT
+    ======================================*/
+
+    --container-width:1280px;
+
+    --navbar-height:84px;
+
+    --section-spacing:7rem;
+
+    /*======================================
+      BUTTONS
+    ======================================*/
+
+    --button-height:54px;
+
+    /*======================================
+      TERMINAL
+    ======================================*/
+
+    --terminal-bg:#071018;
+    --terminal-grid:#0D2740;
+    --terminal-green:#3EF88E;
+    --terminal-blue:#4AAEFF;
+
+    /*======================================
+      ANIMATION
+    ======================================*/
+
+    --transition-fast:.2s;
+    --transition-normal:.35s;
+    --transition-slow:.6s;
+
+    --floating-distance:14px;
+
+    /*======================================
+      LAYERS
+    ======================================*/
+
+    --z-background:1;
+    --z-effects:10;
+    --z-content:100;
+    --z-header:1000;
+    --z-loader:99999;
+
+}

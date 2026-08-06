@@ -1,0 +1,912 @@
+/* ==========================================================
+   PROJECT NOIR : HIGHLAND SENTINEL
+   LAYOUT.CSS
+   PART 1
+   ========================================================== */
+
+/*======================================
+    BODY
+======================================*/
+
+body{
+
+    font-family:var(--font-primary);
+
+    color:var(--color-text);
+
+    background:
+        radial-gradient(circle at top,
+        #0E1C2C 0%,
+        #05080D 65%);
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+/*======================================
+    MAIN
+======================================*/
+
+main{
+
+    position:relative;
+
+    z-index:var(--z-content);
+
+}
+
+/*======================================
+    CONTAINER
+======================================*/
+
+.container{
+
+    width:min(
+        calc(100% - 2rem),
+        var(--container-width)
+    );
+
+    margin-inline:auto;
+
+}
+
+/*======================================
+    SECTION
+======================================*/
+
+section{
+
+    position:relative;
+
+    padding-block:
+        var(--section-spacing);
+
+}
+
+/*======================================
+    HEADER
+======================================*/
+
+.site-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:var(--navbar-height);
+
+    z-index:var(--z-header);
+
+}
+
+/*======================================
+    NAVIGATION
+======================================*/
+
+.site-nav{
+
+    width:min(
+        calc(100% - 2rem),
+        var(--container-width)
+    );
+
+    height:100%;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/*======================================
+    LOGO
+======================================*/
+
+.logo{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/*======================================
+    MENU
+======================================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    font-size:.95rem;
+
+    color:var(--color-text-soft);
+
+    transition:
+        color
+        var(--transition-normal);
+
+}
+
+.nav-links a:hover{
+
+    color:var(--color-white);
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/*======================================
+    HERO
+======================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.2fr
+        .8fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+/*======================================
+    HERO CONTENT
+======================================*/
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+}
+
+.hero-tag{
+
+    display:inline-flex;
+
+    width:max-content;
+
+    padding:
+
+        .5rem
+        1rem;
+
+    border-radius:999px;
+
+}
+
+.hero-title{
+
+    font-size:clamp(
+        3rem,
+        8vw,
+        5.5rem
+    );
+
+    font-weight:800;
+
+    line-height:1.05;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.35rem;
+
+    color:var(--color-text-soft);
+
+}
+
+.hero-description{
+
+    max-width:650px;
+
+    color:var(--color-text-muted);
+
+    line-height:1.8;
+
+}
+
+/*======================================
+    BUTTON GROUP
+======================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-top:1rem;
+
+}
+
+/*======================================
+    HERO PANEL
+======================================*/
+
+.hero-panel{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+   PROJECT NOIR : HIGHLAND SENTINEL
+   LAYOUT.CSS
+   PART 2
+   ========================================================== */
+
+
+/*======================================
+    STATUS DASHBOARD
+======================================*/
+
+.status-dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:1.5rem;
+
+    margin-top:2rem;
+
+}
+
+.status-card{
+
+    min-height:170px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:1.75rem;
+
+}
+
+.status-card__title{
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:var(--color-text-muted);
+
+}
+
+.status-card__value{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.status-card__footer{
+
+    font-size:.85rem;
+
+    color:var(--color-success);
+
+}
+
+/*======================================
+    SECTION HEADER
+======================================*/
+
+.section-header{
+
+    margin-bottom:3rem;
+
+}
+
+.section-header__eyebrow{
+
+    display:inline-block;
+
+    margin-bottom:.75rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+    color:var(--color-primary);
+
+}
+
+.section-header__title{
+
+    font-size:clamp(2rem,5vw,3rem);
+
+    font-weight:700;
+
+}
+
+.section-header__description{
+
+    margin-top:1rem;
+
+    max-width:700px;
+
+    color:var(--color-text-soft);
+
+    line-height:1.8;
+
+}
+
+/*======================================
+    CARD GRID
+======================================*/
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+/*======================================
+    FEATURE CARD
+======================================*/
+
+.feature-card{
+
+    min-height:280px;
+
+    padding:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.feature-card__icon{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.feature-card__title{
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+}
+
+.feature-card__text{
+
+    color:var(--color-text-soft);
+
+    line-height:1.8;
+
+}
+
+/*======================================
+    ARCHIVE GRID
+======================================*/
+
+.archive-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+}
+
+.archive-card{
+
+    min-height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:2rem;
+
+}
+
+.archive-card__id{
+
+    color:var(--color-primary);
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+}
+
+.archive-card__title{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+.archive-card__status{
+
+    display:inline-flex;
+
+    width:max-content;
+
+}
+
+/*======================================
+    COMMUNICATION PANEL
+======================================*/
+
+.communication-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:2rem;
+
+}
+
+.communication-card{
+
+    min-height:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:2rem;
+
+}
+
+/*======================================
+    TERMINAL WINDOW
+======================================*/
+
+.terminal-window{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:420px;
+
+}
+
+.terminal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem 1.5rem;
+
+}
+
+.terminal-body{
+
+    flex:1;
+
+    padding:1.5rem;
+
+    overflow:auto;
+
+    font-family:var(--font-mono);
+
+}
+
+/*======================================
+    FOOTER
+======================================*/
+
+.site-footer{
+
+    padding:3rem 0;
+
+    margin-top:6rem;
+
+}
+
+.footer-layout{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:1.5rem;
+
+}
+
+.footer-links a{
+
+    color:var(--color-text-soft);
+
+    transition:var(--transition-normal);
+
+}
+
+.footer-links a:hover{
+
+    color:var(--color-primary);
+
+}
+
+/* ==========================================================
+   PROJECT NOIR : HIGHLAND SENTINEL
+   LAYOUT.CSS
+   PART 3 (FINAL)
+   ========================================================== */
+
+
+/*======================================
+    FLEX UTILITIES
+======================================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*======================================
+    GRID UTILITIES
+======================================*/
+
+.grid{
+
+    display:grid;
+
+}
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+}
+
+/*======================================
+    SPACING UTILITIES
+======================================*/
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+.mt-7{margin-top:var(--space-7);}
+.mt-8{margin-top:var(--space-8);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+.mb-7{margin-bottom:var(--space-7);}
+.mb-8{margin-bottom:var(--space-8);}
+
+/*======================================
+    WIDTH HELPERS
+======================================*/
+
+.w-100{
+
+    width:100%;
+
+}
+
+.max-600{
+
+    max-width:600px;
+
+}
+
+.max-800{
+
+    max-width:800px;
+
+}
+
+.max-1200{
+
+    max-width:1200px;
+
+}
+
+/*======================================
+    TEXT HELPERS
+======================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+/*======================================
+    DISPLAY HELPERS
+======================================*/
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.visible{
+
+    display:block;
+
+}
+
+/*======================================
+    RESPONSIVE
+======================================*/
+
+@media (max-width:1100px){
+
+    .hero-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .status-dashboard{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .archive-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .communication-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .status-dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-layout{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    section{
+
+        padding-block:4rem;
+
+    }
+
+    .hero-title{
+
+        font-size:2.5rem;
+
+    }
+
+}
