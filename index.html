@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AJ Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+<!-- ========================= -->
+<!-- Intro Screen -->
+<!-- ========================= -->
+
+<div id="intro">
+
+    <div class="web-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="intro-content">
+
+        <h1>AJ</h1>
+
+        <p>PORTFOLIO</p>
+
+        <div class="loader">
+            <div class="loading-bar"></div>
+        </div>
+
+    </div>
+
+</div>
+    <!-- Background Overlay -->
+    <div class="background-overlay"></div>
+    <div id="particles"></div>
+
+    <!-- ===================== -->
+    <!-- Navigation -->
+    <!-- ===================== -->
+
+    <header>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ===================== -->
+    <!-- Hero -->
+    <!-- ===================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <img src="assets/images/profile.jpg"
+                 alt="Profile Picture"
+                 class="profile">
+
+            <h1>AJ</h1>
+
+            <h2>
+                First-Year BS Criminology Student
+            </h2>
+
+            <p class="school">
+                University of the Cordilleras
+            </p>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Bio + Video -->
+        <!-- ===================== -->
+
+        <section class="about-preview">
+
+            <div class="bio-card">
+
+                <div class="bio-banner">
+                    <p>Know Me Better</p>
+                </div>
+
+                <h3>Bio</h3>
+
+                <p>
+
+                    Hello! I'm a first-year BS Criminology student at the
+                    University of the Cordilleras.
+
+                    I enjoy drawing, editing, building simple portfolio
+                    websites, and learning new skills.
+
+                    My dream is to become a firefighter and serve my community
+                    with courage, discipline, and compassion.
+
+                </p>
+
+            </div>
+
+            <div class="video-card">
+
+                <div class="quote-banner">
+                    <p>"With Great Power Comes Great Responsibility"</p>
+                </div>
+
+                <video
+                    id="spiderman-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source
+                        src="assets/videos/spiderman.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="video-controls">
+                    <button type="button" id="volume-button" class="volume-button" aria-label="Toggle sound">🔈</button>
+                    <input type="range" id="volume-range" class="volume-range" min="0" max="100" value="0">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
